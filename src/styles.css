@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'HyliaSerif';
+    src: url('./fonts/HyliaSerifBeta-Regular.otf') format('opentype');
+}
+
+body {
+    font-family: 'HyliaSerif', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(0, 83, 0);
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+
+.name h3 {
+    font-size: 2rem;
+}
+
+#logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+header nav button {
+    cursor: pointer;
+    font-family: 'HyliaSerif', serif;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+header nav button:hover {
+    transform: translateY(-8px);
+}
+
+header nav button:active {
+    background-color: black;
+    color: white;
+}
