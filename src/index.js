@@ -1,0 +1,1 @@
+alert("Ceci est un casque, je suis le président de la République");
