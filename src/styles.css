@@ -126,24 +126,32 @@ header nav button:hover {
 .menu-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 64px;
 
     max-width: 1000px;
 }
 
 .menu-container .menu {
     width: 400px;
-    padding: 10px;
+    padding: 20px;
 
     background-color: #f5e9c8;
     border-radius: 15px;
     border: 3px solid black;
+
+    transition: transform 0.2s ease;
+}
+
+.menu-container .menu:hover {
+    transform: translateY(-3px);
 }
 
 .menu-container .title {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .menu-container h3 {
@@ -153,4 +161,8 @@ header nav button:hover {
 .menu-container .food {
     width: 100px;
     border-radius: 10px;
+}
+
+.menu-container p {
+    font-size: 1.3rem;
 }
