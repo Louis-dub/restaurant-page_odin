@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(logoLink);
 });
 
+// Change page
 const content = document.getElementById("content");
 
 const logoBtn = document.querySelector(".name");
@@ -25,7 +26,6 @@ const homeBtn = document.getElementById("home");
 
 const menuBtn = document.getElementById("menu");
 
-const homeBookBtn = document.getElementById("home-book");
 const bookBtn = document.getElementById("book");
 
 content.innerHTML = "";
@@ -44,4 +44,9 @@ homeBtn.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
     content.innerHTML = "";
     content.appendChild(menu);
-})
+});
+
+bookBtn.addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(book);
+});

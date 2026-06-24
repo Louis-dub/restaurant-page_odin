@@ -175,3 +175,19 @@ header nav button:hover {
 }
 
 /* Book Page */
+.book-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    gap: 64px;
+}
+
+.book-container img {
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.book-container p {
+    font-size: 2rem;
+    color: #d9cba8;
+}
