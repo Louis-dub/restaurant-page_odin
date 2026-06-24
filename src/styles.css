@@ -11,17 +11,30 @@
 
 body {
     font-family: 'HyliaSerif', serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+button {
+    font-family: 'HyliaSerif', serif;
+}
+
+button:active {
+    transform: scale(0.9) !important;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 15px 50px;
     background-color: rgb(0, 83, 0);
+    border-bottom: 5px solid rgba(77, 0, 0, 0.788);
 }
 
 .name {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -45,10 +58,10 @@ header nav {
 
 header nav button {
     cursor: pointer;
-    font-family: 'HyliaSerif', serif;
     font-size: 1.5rem;
     border: 1px solid black;
     border-radius: 15px;
+    width: 140px;
     padding: 10px;
     transition: transform 0.2s ease;
 }
@@ -57,7 +70,87 @@ header nav button:hover {
     transform: translateY(-8px);
 }
 
-header nav button:active {
-    background-color: black;
-    color: white;
+#content {
+    width: 100%;
+    overflow-y: auto;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('./images/background.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+/* Home */
+.home-container {
+    text-align: center;
+    max-width: 1000px;
+}
+
+.home-container h1 {
+    font-size: 4rem;
+    color: #f5e9c8;
+    margin-bottom: 16px;
+}
+
+.home-container p {
+    font-size: 1.5rem;
+    color: #d9cba8;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.home-container button {
+    background-color: transparent;
+    color: #f5e9c8;
+    border: 2px solid #c8a84b;
+    border-radius: 4px;
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s, transform 0.2s;
+}
+
+.home-container button:hover {
+    background-color: #c8a84b;
+    color: #1a0f00;
+    transform: translateY(-3px);
+}
+
+/* Menu */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1000px;
+}
+
+.menu-container .menu {
+    width: 400px;
+    padding: 10px;
+
+    background-color: #f5e9c8;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.menu-container .title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-container h3 {
+    font-size: 2rem;
+}
+
+.menu-container .food {
+    width: 100px;
+    border-radius: 10px;
 }
