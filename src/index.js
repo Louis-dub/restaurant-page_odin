@@ -3,6 +3,7 @@ import logo from './images/logo.png';
 
 import { home } from './home.js';
 import { menu } from './menu.js';
+import { book } from './book.js';
 
 // Add Logo
 document.addEventListener("DOMContentLoaded", () => {

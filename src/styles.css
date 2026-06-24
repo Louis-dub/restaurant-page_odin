@@ -123,7 +123,14 @@ header nav button:hover {
 }
 
 /* Menu */
-.menu-container {
+.menu-container h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: #d9cba8;
+    margin-bottom: 64px;
+}
+
+.menu-container .menus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -166,3 +173,5 @@ header nav button:hover {
 .menu-container p {
     font-size: 1.3rem;
 }
+
+/* Book Page */
